@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yay!</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(300deg,#42aff3,#2b76ce,#4fb5dd);
+            background-size: 180% 180%;
+            animation: gradient-animation 12s ease infinite;
+        }
+        .top-media {
+            width: 220px;
+            max-width: 80vw;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            display: block;
+        }
+        .hearts  {
+            font-size: 4vw;
+            min-font-size: 2em;
+            max-font-size: 5em;
+            color: #bce5ff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-align: center;
+            animation: bounce 2s infinite;
+            margin: 0 10px;
+        }
+        .description {
+            font-size: 2vw;
+            min-font-size: 1em;
+            max-font-size: 2em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-align: center;
+            margin-top: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-30px); }
+            60% { transform: translateY(-15px); }
+        }
+        @media (max-width: 600px) {
+            .top-media {
+                width: 90vw;
+                max-width: 95vw;
+            }
+            .hearts {
+                font-size: 2.2em;
+            }
+            .description {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <audio src="6.mp3" autoplay loop hidden></audio>
+    <video src="5.mp4" autoplay loop muted class="top-media"></video>
+    <div class="hearts">Knew you would say yes!<br>❤️ 💕 💖 ❤️ 💕</div>
+    <div class="description">See you on Sat 1:00 PM 02/14/26 HAHAHA grabe full details</div>
+</body>
+</html>
